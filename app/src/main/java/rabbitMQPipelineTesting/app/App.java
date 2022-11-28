@@ -30,6 +30,19 @@ public class App {
         Receiver testReceiver = new Receiver();
         testSender.start();
         testReceiver.start();
+        /*
+         *  Create stages: start, stage1, stage2, stage3, finish
+         * stage1 -> finish have recieve
+         * start only has send 
+         * parameters (name, previousStage, NextStage, delay)
+         *      if Prvious stage = Null, then don't recieve
+         *      if nextStage is null, then  don't send but write to file 
+         *      delay is delay in send across the channel
+         *      Use the current name as the stage 
+         *      
+         * 
+         */
+
 
     }
 
